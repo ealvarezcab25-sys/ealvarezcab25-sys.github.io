@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CV digital de Eva Álvarez — Ingeniera en Sistemas y Computación.">
+<title>Eva Álvarez | Ingeniera en Sistemas y Computación</title>
+<style>
+:root{
+  --ink:#18263a; --blue:#4b78a8; --soft:#f5f8fc; --line:#dce4ed;
+  --muted:#718096; --white:#fff; --shadow:0 12px 35px rgba(24,38,58,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:#eef2f6;color:var(--ink);
+  font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  line-height:1.55;
+}
+a{color:inherit;text-decoration:none}
+.page{max-width:1120px;margin:34px auto;padding:0 18px}
+.cv{
+  background:var(--white);box-shadow:var(--shadow);border:1px solid var(--line);
+  overflow:hidden;
+}
+header{
+  padding:42px 54px 30px;display:flex;justify-content:space-between;gap:35px;
+  border-bottom:1px solid var(--line);position:relative;
+}
+header:after{content:"";position:absolute;left:54px;right:54px;bottom:0;height:3px;background:var(--blue)}
+.kicker{font-size:.72rem;letter-spacing:.17em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:7px}
+h1{font-size:3rem;line-height:1;margin:0;letter-spacing:-.045em;font-weight:750}
+.role{text-align:right;padding-top:8px}
+.role strong{display:block;font-size:1rem;color:var(--blue);letter-spacing:.04em}
+.role span{display:block;color:var(--muted);font-size:.78rem;margin-top:5px}
+.contact{
+  display:grid;grid-template-columns:repeat(3,1fr);margin:0 54px;
+  background:var(--soft);border:1px solid var(--line);border-top:0;
+}
+.contact div{padding:13px 18px}
+.contact div+div{border-left:1px solid var(--line)}
+.label{font-size:.62rem;text-transform:uppercase;letter-spacing:.12em;font-weight:800;color:var(--ink)}
+.contact p{margin:2px 0 0;color:var(--muted);font-size:.82rem}
+main{padding:34px 54px 42px}
+.section{margin-bottom:30px}
+.section-title{
+  display:flex;align-items:center;gap:13px;margin-bottom:13px;
+  font-size:.84rem;letter-spacing:.13em;text-transform:uppercase;font-weight:800;
+}
+.section-title:after{content:"";height:1px;background:var(--line);flex:1}
+.profile{font-size:.92rem;color:#334155;max-width:980px}
+.grid{display:grid;grid-template-columns:285px 1fr;gap:34px;align-items:start}
+.sidebar{display:flex;flex-direction:column;gap:20px}
+.card{background:var(--soft);border:1px solid var(--line);padding:20px 20px}
+.card h3{margin:0 0 15px;font-size:.78rem;text-transform:uppercase;letter-spacing:.12em}
+.education{margin-bottom:17px}
+.education:last-child{margin-bottom:0}
+.degree{font-weight:750;font-size:.88rem}
+.school{font-size:.76rem;color:var(--muted);margin-top:2px}
+.skills{display:flex;flex-wrap:wrap;gap:7px}
+.skill{border:1px solid #ccd9e7;background:#fff;padding:5px 8px;font-size:.68rem;color:#385b80;font-weight:650}
+.job{padding:0 0 23px;margin-bottom:23px;border-bottom:1px solid var(--line)}
+.job:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
+.job-head{display:flex;justify-content:space-between;gap:15px;align-items:baseline}
+.job h3{margin:0;font-size:1rem}
+.date{font-size:.72rem;color:var(--muted);white-space:nowrap}
+.company{font-size:.72rem;letter-spacing:.11em;color:var(--blue);font-weight:800;margin:4px 0 9px}
+.job ul{margin:0;padding-left:18px;color:#405064;font-size:.79rem}
+.job li{margin:5px 0}
+footer{
+  padding:15px 54px;border-top:1px solid var(--line);font-size:.66rem;
+  color:var(--muted);display:flex;justify-content:space-between
+}
+.actions{position:fixed;right:24px;bottom:24px;display:flex;gap:9px}
+.actions button{
+  border:0;background:var(--ink);color:white;padding:11px 15px;border-radius:999px;
+  font-weight:700;box-shadow:0 8px 22px rgba(24,38,58,.22);cursor:pointer
+}
+.actions button.secondary{background:white;color:var(--ink);border:1px solid var(--line)}
+@media(max-width:760px){
+  .page{margin:0;padding:0}.cv{border:0}
+  header{padding:30px 24px 23px;display:block}
+  header:after{left:24px;right:24px}
+  h1{font-size:2.35rem}.role{text-align:left;padding-top:14px}
+  .contact{margin:0 24px;grid-template-columns:1fr}
+  .contact div+div{border-left:0;border-top:1px solid var(--line)}
+  main{padding:27px 24px 34px}.grid{grid-template-columns:1fr;gap:25px}
+  .job-head{display:block}.date{display:block;margin-top:2px}
+  footer{padding:13px 24px}
+  .actions{right:14px;bottom:14px}
+}
+@media print{
+  body{background:white}.page{max-width:none;margin:0;padding:0}.cv{box-shadow:none;border:0}
+  .actions{display:none}header{padding-top:25px}main{padding-top:25px}
+  @page{size:A4;margin:9mm}
+}
+</style>
+</head>
+<body>
+<div class="page">
+<article class="cv">
+<header>
+  <div>
+    <div class="kicker">Currículum Vitae</div>
+    <h1>Eva Álvarez</h1>
+  </div>
+  <div class="role">
+    <strong>Ingeniera en Sistemas y Computación</strong>
+    <span>Tecnología · Soporte TI · Ciberseguridad</span>
+  </div>
+</header>
+
+<section class="contact">
+  <div><div class="label">Teléfono</div><p><a href="tel:+18293745258">(829) 374-5258</a></p></div>
+  <div><div class="label">Correo</div><p><a href="mailto:alv252506@gmail.com">alv252506@gmail.com</a></p></div>
+  <div><div class="label">Ubicación</div><p>Santiago de los Caballeros, Rep. Dom.</p></div>
+</section>
+
+<main>
+<section class="section">
+  <div class="section-title">Perfil profesional</div>
+  <div class="profile">
+    Ingeniera en Sistemas y Computación con experiencia en soporte tecnológico, administración de usuarios y accesos,
+    Microsoft 365, redes, hardware, software e inventario de activos tecnológicos. Experiencia en atención y resolución
+    de incidencias, continuidad operativa y coordinación de servicios de TI. Perfil analítico, proactivo y orientado a la
+    resolución de problemas, la mejora de procesos y la adaptación a entornos tecnológicos cambiantes.
+  </div>
+</section>
+
+<div class="grid">
+<aside class="sidebar">
+  <section class="card">
+    <h3>Formación académica</h3>
+    <div class="education">
+      <div class="degree">Ingeniería en Sistemas y Computación</div>
+      <div class="school">Universidad Dominicana O&M · 2021–2024</div>
+    </div>
+    <div class="education">
+      <div class="degree">Diplomado en SQL Server</div>
+      <div class="school">Instituto Tecnológico de Santiago (ITLA) · 2026</div>
+    </div>
+    <div class="education">
+      <div class="degree">Diplomado en Ciberseguridad</div>
+      <div class="school">Universidad Spain Business School · 2026</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h3>Competencias técnicas</h3>
+    <div class="skills">
+      <span class="skill">Hardware & Software</span><span class="skill">Windows</span>
+      <span class="skill">Linux</span><span class="skill">Microsoft 365</span>
+      <span class="skill">Azure AD</span><span class="skill">MFA</span>
+      <span class="skill">SQL</span><span class="skill">Servidores</span>
+      <span class="skill">Backups</span><span class="skill">TCP/IP</span>
+      <span class="skill">Wi‑Fi</span><span class="skill">Acceso remoto</span>
+      <span class="skill">Inventario TI</span><span class="skill">Ciberseguridad</span>
+      <span class="skill">Pentesting</span>
+    </div>
+  </section>
+</aside>
+
+<section>
+  <div class="section-title">Experiencia profesional</div>
+
+  <article class="job">
+    <div class="job-head"><h3>Encargada de Soporte de Tecnología</h3><span class="date">Enero 2026 – Actualidad</span></div>
+    <div class="company">GLOBAL CIGARS GROUP</div>
+    <ul>
+      <li>Coordinación y supervisión del área de soporte tecnológico, garantizando la continuidad operativa de los servicios de TI.</li>
+      <li>Administración de accesos, servidores, redes y plataformas corporativas.</li>
+      <li>Gestión y resolución de incidencias, optimizando los tiempos de respuesta y la experiencia de los usuarios.</li>
+      <li>Control de inventario tecnológico, licenciamiento y coordinación con proveedores de tecnología.</li>
+    </ul>
+  </article>
+
+  <article class="job">
+    <div class="job-head"><h3>Soporte de TI</h3><span class="date">Agosto 2025 – Enero 2026</span></div>
+    <div class="company">GLOBAL CIGARS GROUP</div>
+    <ul>
+      <li>Administración de usuarios y accesos en Microsoft 365, incluyendo configuración de MFA, VPN y gestión de permisos.</li>
+      <li>Soporte técnico de hardware, software, redes y aplicaciones corporativas, con atención presencial y remota.</li>
+      <li>Diagnóstico y resolución de incidencias tecnológicas, garantizando la continuidad operativa de los servicios de TI.</li>
+      <li>Gestión y control de inventario tecnológico, instalación, configuración y mantenimiento de equipos informáticos.</li>
+    </ul>
+  </article>
+
+  <article class="job">
+    <div class="job-head"><h3>Soporte Técnico</h3><span class="date">2023 – 2025</span></div>
+    <div class="company">PRODACOM SRL</div>
+    <ul>
+      <li>Administración de procesos de garantía (RMA) y gestión de reparaciones de equipos tecnológicos.</li>
+      <li>Diagnóstico, mantenimiento y reparación de hardware y software.</li>
+      <li>Soporte técnico especializado a usuarios internos y externos, resolviendo incidencias y optimizando la disponibilidad de los servicios tecnológicos.</li>
+    </ul>
+  </article>
+</section>
+</div>
+</main>
+
+<footer><span>EVA ÁLVAREZ · CV DIGITAL</span><span>Ingeniera en Sistemas y Computación</span></footer>
+</article>
+</div>
+
+<div class="actions">
+  <button class="secondary" onclick="window.print()">Guardar como PDF</button>
+</div>
+</body>
+</html>

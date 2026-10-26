@@ -154,6 +154,38 @@ footer{
 }
 
 
+.professional-skills {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 30px;
+  margin-top: 18px;
+}
+
+.professional-skill {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+  break-inside: avoid;
+}
+
+.professional-skill h3 {
+  margin: 0 0 6px;
+  font-size: .88rem;
+  color: var(--blue);
+}
+
+.professional-skill p {
+  margin: 0;
+  font-size: .82rem;
+  line-height: 1.6;
+  color: #405064;
+}
+
+@media (max-width: 600px) {
+  .professional-skills {
+    grid-template-columns: 1fr;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -265,6 +297,74 @@ footer{
   </article>
 </section>
   </div> 
+
+<section class="section" id="habilidades-profesionales">
+  <div class="section-title">Habilidades profesionales</div>
+
+  <div class="professional-skills">
+
+    <article class="professional-skill">
+      <h3>Soporte técnico</h3>
+      <p>Diagnóstico y mantenimiento preventivo y correctivo
+      de equipos informáticos, instalación de software
+      y resolución de incidencias técnicas.</p>
+    </article>
+
+    <article class="professional-skill">
+      <h3>Sistemas operativos y administración de usuarios</h3>
+      <p>Administración de Windows y Linux, gestión de
+      cuentas, permisos y accesos de usuarios.</p>
+    </article>
+
+    <article class="professional-skill">
+      <h3>Microsoft 365 y servicios en la nube</h3>
+      <p>Administración de usuarios, Exchange Online,
+      Teams, Intune, Microsoft Entra ID y autenticación
+      multifactor (MFA).</p>
+    </article>
+
+    <article class="professional-skill">
+      <h3>Redes y conectividad</h3>
+      <p>Configuración y diagnóstico de redes TCP/IP,
+      Wi-Fi, VPN, impresoras en red y herramientas
+      de acceso remoto.</p>
+    </article>
+
+    <article class="professional-skill">
+      <h3>Servidores y copias de seguridad</h3>
+      <p>Conocimientos de administración básica de servidores,
+      gestión de respaldos y recuperación de información.</p>
+    </article>
+
+    <article class="professional-skill">
+      <h3>Bases de datos</h3>
+      <p>Conocimientos de SQL Server y consultas SQL
+      para gestionar y consultar datos.</p>
+    </article>
+
+    <article class="professional-skill">
+      <h3>Ciberseguridad</h3>
+      <p>Conocimientos de auditoría web, pruebas de penetración
+      (pentesting) y documentación de vulnerabilidades.
+      Familiaridad con Nmap, Wireshark, OWASP y Metasploit.</p>
+    </article>
+
+    <article class="professional-skill">
+      <h3>Gestión de activos tecnológicos</h3>
+      <p>Control de inventario, seguimiento de equipos,
+      gestión de activos y control de licencias.</p>
+    </article>
+
+    <article class="professional-skill">
+      <h3>Desarrollo asistido por inteligencia artificial</h3>
+      <p>Familiaridad con GitHub, GitHub Copilot y Claude
+      como apoyo al desarrollo y la documentación
+      de soluciones tecnológicas.</p>
+    </article>
+
+  </div>
+</section>
+
   
 <section class="section" id="certificaciones">
   <div class="section-title">

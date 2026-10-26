@@ -154,6 +154,37 @@ footer{
 }
 }
 
+.technical-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.technical-skill {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.technical-skill:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.technical-skill strong {
+  display: block;
+  color: var(--blue);
+  font-size: .76rem;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.technical-skill p {
+  margin: 0;
+  color: #405064;
+  font-size: .72rem;
+  line-height: 1.5;
+}
+
 
 </style>
 </head>
@@ -214,20 +245,75 @@ footer{
     </div>
   </section>
 
-  <section class="card">
-    <h3> Habilidades Y Competencias técnicas</h3>
-    <div class="skills">
-      <span class="skill">Hardware & Software</span><span class="skill">Windows</span>
-      <span class="skill">Linux</span><span class="skill">Microsoft 365</span>
-      <span class="skill">Azure AD</span><span class="skill">MFA</span>
-      <span class="skill">SQL</span><span class="skill">Servidores</span>
-      <span class="skill">Backups</span><span class="skill">TCP/IP</span>
-      <span class="skill">Wi‑Fi</span><span class="skill">Acceso remoto</span>
-      <span class="skill">Inventario TI</span><span class="skill">Ciberseguridad</span>
-      <span class="skill">Pentesting</span>
-  
+ 
+<section class="card">
+  <h3>Habilidades técnicas</h3>
+
+  <div class="technical-skills">
+
+    <div class="technical-skill">
+      <strong>Soporte técnico</strong>
+      <p>Diagnóstico y mantenimiento preventivo y correctivo
+      de equipos informáticos, instalación de software y
+      resolución de incidencias de hardware y software.</p>
     </div>
-  </section>
+
+    <div class="technical-skill">
+      <strong>Sistemas operativos y usuarios</strong>
+      <p>Administración y soporte de Windows y Linux,
+      gestión de cuentas, permisos y accesos de usuarios.</p>
+    </div>
+
+    <div class="technical-skill">
+      <strong>Microsoft 365 y servicios en la nube</strong>
+      <p>Administración de usuarios, correos corporativos,
+      Microsoft Entra ID (Azure AD), MFA, Exchange Online,
+      Teams e Intune.</p>
+    </div>
+
+    <div class="technical-skill">
+      <strong>Redes y conectividad</strong>
+      <p>Configuración y diagnóstico de redes TCP/IP,
+      Wi-Fi, VPN, impresoras en red y herramientas
+      de acceso remoto.</p>
+    </div>
+
+    <div class="technical-skill">
+      <strong>Servidores y copias de seguridad</strong>
+      <p>Conocimientos de administración básica de servidores,
+      gestión de respaldos y recuperación de información.</p>
+    </div>
+
+    <div class="technical-skill">
+      <strong>Bases de datos</strong>
+      <p>Conocimientos de SQL Server y consultas SQL
+      para la gestión y recuperación de datos.</p>
+    </div>
+
+    <div class="technical-skill">
+      <strong>Ciberseguridad y análisis de vulnerabilidades</strong>
+      <p>Conocimientos de auditoría de aplicaciones web,
+      pruebas de penetración (pentesting) y elaboración
+      de informes de vulnerabilidades. Familiaridad con
+      Nmap, Wireshark, OWASP y Metasploit.</p>
+    </div>
+
+    <div class="technical-skill">
+      <strong>Gestión de activos tecnológicos</strong>
+      <p>Control de inventario, seguimiento de equipos,
+      gestión de activos y apoyo en el control de licencias.</p>
+    </div>
+
+    <div class="technical-skill">
+      <strong>Herramientas de desarrollo asistido por IA</strong>
+      <p>Familiaridad con GitHub, GitHub Copilot y Claude
+      como apoyo al desarrollo, análisis y documentación
+      de soluciones tecnológicas.</p>
+    </div>
+
+  </div>
+</section>
+
 </aside>
 
 <section>

@@ -89,64 +89,12 @@ footer{
   footer{padding:13px 24px}
   .actions{right:14px;bottom:14px}
 }
-@page {
-  size: A4;
-  margin: 12mm;
+@media print{
+  body{background:white}.page{max-width:none;margin:0;padding:0}.cv{box-shadow:none;border:0}
+  .actions{display:none}header{padding-top:25px}main{padding-top:25px}
+  @page{size:A4;margin:9mm}
 }
-
-@media print {
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-    background: white;
-  }
-
-  .page {
-    max-width: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .cv {
-    border: 0;
-    box-shadow: none;
-    overflow: visible;
-  }
-
-  .actions {
-    display: none !important;
-  }
-
-  header {
-    padding: 20px 35px;
-  }
-
-  main {
-    padding: 20px 35px;
-  }
-
-  footer {
-    padding: 12px 35px;
-    margin-top: 20px;
-    break-inside: avoid;
-  }
-
-  #certificaciones {
-    break-before: page;
-    margin-top: 0;
-  }
-
-  .certificate {
-    break-inside: avoid;
-  }
-
-  .certificate img {
-    height: 300px;
-    max-width: 100%;
-  }
-}
-
+  
 #certificaciones {
   width: 100%;
   margin-top: 35px;
